@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&subset=cyrillic');
+/*RESET************************************************************************************************/
+html, body, header, main, footer, div, section, article, nav, ul, li , a, h1, h2, h3, h4, p, span {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  max-width: 100%;
+  overflow-x:hidden;
+}
+/**HTML MAIN ELEMENTS****************************************************************************/
+body {
+  font: 14px 'Open Sans', sans-serif;
+}
+header {
+ height: 625px;
+ background: linear-gradient(
+      rgba(0, 0, 0, 0.47),
+      rgba(0, 0, 0, 0.47)
+    ), url("img/header_bg.jpg");
+ background-size: cover;
+ background-position: center;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+nav {
+  color: #ffffff;
+  align-self: center;
+}
+h1 {
+  margin-left: 75px;
+  margin-top: 125px;
+  z-index: 1000;
+  position: relative;
+}
+main {
+  background-color: #fafafa;
+}
+/*NAVIGATION**************************************************************************************/
+#header_upper_line {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #000000;
+  height: 75px;
+  font-size: 16px;
+  justify-content: space-between;
+}
+#logo {
+  width: 299px;
+  height: 56px;
+  margin-left: 6px;
+  align-self: center;
+}
+#menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+#menu li {
+  flex-basis: auto;
+}
+#lang_bar {
+align-self: center;
+width: 75px;
+}
+#lang_bar ul {
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+  justify-content: space-between;
+}
+#lang_bar a {
+  color: #ffffff;
+  position: relative;
+  }
+#lang_bar a:first-of-type:after {
+    content:"";
+    width:1px;
+    color: #ffffff;
+    position: absolute;
+    display: block;
+    }
+#lang_bar li {
+  padding-right: 20px;
+}
+nav a {
+  color: #ffffff;
+  padding-right: 50px;
+}
+/*MAIN HEADING *******************************************************************************************/
+#ted_style, #x_style {
+  color: #ffffff;
+  transform: scale(1,.8);
+  font-weight: 800;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  font-size: 70px;
+}
+#x_style {
+  font-size: 41px;
+  position: relative;
+  bottom: 20px;
+}
+#demoSite_style {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 15px;
+  margin-left: 7px;
+}
+/*MAIN HEADING DETAILS***************************************************************************/
+#heading_details {
+  color: #ffffff;
+    background-color: #000000;
+    z-index: 2;
+    width: 400px;
+    height: 225px;
+    position: relative;
+    top: -30px;
+    margin-left: 24px;
+    font-size: 40px;
+    padding-left: 62px;
+    padding-top: 35px;
+    box-sizing: border-box;
+    line-height: 35px;
+}
+#heading_details p:nth-of-type(2) {
+  margin-left:5px;
+}
+.btn {
+  font-size: 20px;
+    color: #ffffff;
+    background: #e62b1e;
+    padding: 15px 20px;
+    position: relative;
+    top: -21px;
+    left: 224px;
+}
+.btn:hover {
+
+}
+.btn.registrate {
+  position: relative;
+  top: -21px;
+  left: 224px;
+}
+
+/*EVENT INTRO**********************************************************************/
+#event_intro {
+  width: 650px;
+    background-color: #ffffff;
+    position: relative;
+    top: -90px;
+    left: calc(100% - 675px);
+    padding-top: 25px;
+}
+#event_intro h3 {
+  color: #ffffff;
+    background-color: #000000;
+    padding: 5px 5px 5px 25px;
+    width: 345px;
+    font-size: 25px;
+    font-weight: 400;
+}
+#event_intro p {
+  font-size: 14px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+h3 span {
+  font-size: 16px;
+    position: relative;
+    top: -10px;
+}
+/*TED ELABORATED SECTION************************************************************/
+#tedx_elaborated h2 {
+  font-size: 70px;
+  color: #e62b1e;
+  font-weight: 800;
+  transform: scale(1,.8);
+  letter-spacing: -4px;
+  text-align: center;
+  position: relative;
+}
+#tedx_elaborated h2:before {
+  content: "";
+    display: block;
+    position: absolute;
+    top: -45px;
+    z-index: -1000;
+    background-color: #ffffff;
+    width: 641px;
+    height: 500px;
+    margin-left: 67px;
+}
+#vs_style {
+  color: #9d9d9d;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 60px;
+}
+#x_style1 {
+  font-size: 50px;
+  position: relative;
+  top: -25px;
+}
+#tedx_elaborated {
+  margin-top: 133px;
+  position: relative;
+}
+#elaboration_container {
+  background-color: #000000;
+color: #ffffff;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 93%;
+margin: 24px auto 0;
+height: auto;
+padding: 50px 25px;
+z-index: 10000;
+position: relative;
+}
+.elaboration_paragraph{
+  flex-basis: 48%;
+  font-size: 14px;
+}
+.ted_color_style {
+  color:#e62b1e;
+}
+#motto_caption {
+  color: rgba(0, 0, 0, 0);
+  background: url("img/motto_bg.jpg") no-repeat fixed;
+  height: 700px;
+}
+/*BECOME A SPEAKER SECTION************************************************/
+#become_a_speaker {
+  height: 725px;
+}
+#become_a_speaker h2{
+  text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 400;
+    position: relative;
+    margin-left: 335px;
+    z-index: 100;
+    margin-bottom: 15px;
+}
+#become_a_speaker h2:after {
+  content: "";
+    display: block;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    background-color: #e62b1e;
+    width: 1013px;
+    height: 475px;
+    margin-left: 76px;
+    z-index: -1;
+    top: -38px;
+    left: -100px;
+}
+#speaker_samples ul {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  width: 100%;
+}
+.speaker{
+  flex-basis: 20vw;
+  height: 15vw;
+  display: flex;
+  justify-content: center;
+}
+#speaker1 {
+  background: url("img/speaker1.jpg") no-repeat center;
+  background-size: cover;
+}
+#speaker2 {
+  background: url("img/speaker2.jpg") no-repeat center;
+  background-size: cover;
+}
+#speaker3 {
+  background: url("img/speaker3.jpg") no-repeat center;
+  background-size: cover;
+}
+#speaker4 {
+  background: url("img/speaker4.jpg") no-repeat center;
+  background-size: cover;
+}
+#speaker5 {
+  background: url("img/speaker5.jpg") no-repeat center;
+  background-size: cover;
+}
+#speaker6 {
+  background: url("img/speaker6.jpg") no-repeat center;
+  background-size: cover;
+}
+.speaker span {
+  font-size: 7vw;
+  color: #9d9d9d;
+    text-align: center;
+    padding: 0;
+    background: #ffffff;
+    border-radius: 50%;
+    align-self: center;
+    width: 10vw;
+    height: 10vw;
+}
+#speaker4 span {
+  color: #e62b1e;
+  font-size: 3.5vw;
+  font-weight: 600;
+  line-height: 9.3vw;
+}
+#speaker_samples {
+  position: relative;
+  z-index: 10000;
+}
+#apply_block {
+    height: 200px;
+    width: 575px;
+    background-color: #000000;
+    color: #ffffff;
+    box-sizing: border-box;
+    z-index: 100;
+    position: relative;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+#apply_block p {
+  position: relative;
+    top: 89px;
+    width: 368px;
+    left: 50px;
+    line-height: 37px;
+}
+.btn.apply {
+  position: relative;
+  top: 106px;
+    left: 314px;
+}
+/*TEDX SALON BACKGROUND****************************************************************/
+#tedx_salon {
+  height: 700px;
+  width: 100%;
+  color: rgba(0,0,0,0);
+  background:linear-gradient(
+       rgba(0, 0, 0, 0.25),
+       rgba(0, 0, 0, 0.25)
+     ), url("img/tedxsalon.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+/*PARTNERS*****************************************************************************/
+#support_tedx {
+  background: url("img/partners_bg.jpg") center no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+#support_tedx h2 {
+  color: #ffffff;
+    font-weight: 500;
+    font-size: 35px;
+    padding-top: 75px;
+    margin-left: 245px;
+}
+#support_tedx h2>span {
+  font-weight: 800;
+  color: #e62b1e;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 35px;;
+  transform: scale(1,.7);
+}
+#support_tedx h2>span>span {
+  font-size: 16px;
+    position: relative;
+    top: -14px;
+    font-weight: 800;
+    transform: scale(1,.7);
+}
+#become_partner {
+  margin-left: 250px;
+}
+#become_partner p {
+  background-color: #ffffff;
+    width: 425px;
+    height: 125px;
+    margin-top: 50px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+#become_partner p span {
+  color:  #e62b1e;
+  font-weight: 600;
+}
+#become_partner p>span>span {
+  position: relative;
+    top: -4px;
+    font-size: 13px;
+}
+.btn.read_more {
+  position: relative;
+  left: 200px;
+  top: -20px;
+}
+.supporters {
+  width: auto;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  height: 100px;
+  margin-top: 25px;
+}
+.supporters h4 {
+  color: #e62b1e;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 22px;
+    align-self: center;
+}
+.supporters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.supporters_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80vw;
+}
+#partners {
+  margin-left: 100px;
+  width: 70vw;
+}
+#media_partners {
+  margin-left: 100px;
+  width: 80vw;
+}
+#sponsors {
+  margin-left: 25px;
+  width: 80vw;
+}
+.supporters img {
+  height: 3.3vw;
+}
+.supporters_list li {
+  align-self: center;
+}
+/*DATE_AND_TIME*************************************************************************************/
+#time_and_date_section {
+  background: url("img/contact_bg.jpg") no-repeat center;
+  background-size: cover;
+  height: 800px;
+  padding-bottom: 100px;
+}
+#time_and_date {
+  width: 58vw;
+  height: 200px;
+  position: relative;
+  left: 100px;
+  top: 250px;
+  background-color: #ffffff;
+  padding: 25px;
+  box-sizing: border-box;
+}
+#day_number {
+  font-weight: 800;
+    font-size: 120px;
+    color: #959494;
+    position: relative;
+    top: -112px;
+    left: -49px;
+}
+#month {
+  text-transform: uppercase;
+    color: #e62b1e;
+    font-size: 35px;
+    position: relative;
+    left: -87px;
+    top: -112px;
+}
+#hour {
+  color: #959494;
+  font-size: 35px;
+  position: relative;
+  left: -59px;
+  top: -112px;
+}
+#location_and_contacts_subsection {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: -59px;
+    align-items: flex-end;
+}
+#contacts {
+  text-align: right;
+  color: #3a3636;
+  font-weight: 600;
+}
+#location {
+  text-transform: uppercase;
+  color: #3a3636;
+  font-weight: 600;
+}
+#location p:nth-child(3) {
+  color: #959494;
+}
+#map {
+  width: 300px;
+height: 300px;
+position: relative;
+top: 251px;
+left: 56%;
+}
+/*FOOTER***********************************************************************/
+#social_bar {
+  height: 75px;
+  width: 100%;
+  background-color: #000000;
+  text-align: center;
+}
+#copyright {
+    height: 50px;
+    text-align: center;
+    color: #585555;
+    font-size: 14px;
+    vertical-align: middle;
+    padding-top: 16px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+#copyright span {
+  color: #e62b1e;
+}
+#copyright span:nth-child(2) {
+  font-size: 10px;
+  position: relative;
+  top: -7px;
+}
+#social_bar ul{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+    padding-top: 19px;
+}
+
+#social_bar img {
+  width: 35px;
+}
